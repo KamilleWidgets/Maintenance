@@ -39,7 +39,7 @@ This model contains the following variables:
 viewId
 =========
 
-- maintenance
+- widget.maintenance
 
 
 
@@ -49,6 +49,10 @@ viewId
 
 History Log
 ------------------
+    
+- 1.1.0 -- 2017-04-07
+
+    - changed viewId to widget.maintenance
     
 - 1.0.0 -- 2017-04-07
 
