@@ -36,10 +36,36 @@ This model contains the following variables:
 
 
 
-viewId
+Demo snippet
 =========
 
-- maintenance
+```php
+<?php
+
+
+use Kamille\Architecture\ApplicationParameters\ApplicationParameters;
+
+$theme = ApplicationParameters::get("theme");
+
+$conf = [
+    "layout" => [
+        "name" => "splash/default",
+    ],
+    "widgets" => [
+        "main.maintenance" => [
+            "name" => "maintenance/default",
+            "conf" => [
+                "logo_src" => "theme/$theme/widgets/maintenance/logo.png",
+                "logo_alt" => "logo",
+                "main_text" => "Our website is currently down for maintenance.",
+                "aux_text" => "We expect to be back in a couple of hours. Thanks for your patience.",
+                "image_src" => "theme/$theme/widgets/maintenance/maintenance.png",
+                "image_alt" => "maintenance",
+            ],
+        ],
+    ],
+];
+```
 
 
 
@@ -49,6 +75,14 @@ viewId
 
 History Log
 ------------------
+
+- 1.2.0 -- 2017-04-07
+
+    - removed laws conf file, providing snippet in README instead
+
+- 1.1.0 -- 2017-04-07
+
+    - changed viewId to widget.maintenance
     
 - 1.0.0 -- 2017-04-07
 
