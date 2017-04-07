@@ -76,6 +76,10 @@ $conf = [
 History Log
 ------------------
 
+- 1.2.1 -- 2017-04-07
+
+    - really removing laws conf file (forgot)
+
 - 1.2.0 -- 2017-04-07
 
     - removed laws conf file, providing snippet in README instead
