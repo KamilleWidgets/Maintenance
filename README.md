@@ -53,7 +53,7 @@ $conf = [
     ],
     "widgets" => [
         "main.maintenance" => [
-            "name" => "maintenance/default",
+            "name" => "Maintenance/default",
             "conf" => [
                 "logo_src" => "theme/$theme/widgets/maintenance/logo.png",
                 "logo_alt" => "logo",
